@@ -115,7 +115,7 @@ h2   {color: black;background: white;}
   <font size="6" colour = "red">
   <a href="https://github.com/cdatproject/Practicals---final/tree/master/Submission">Please click here for the GEOG5995 code submission:</a><br><br><br>
   </font>
-  <a href="GEOG5995.html">Please click here for further details and the development stages of GEOG5995 code:</a>
+  <a href="geog5995.html">Please click here for further details and the development stages of GEOG5995 code:</a>
   
 </div>
 
@@ -125,25 +125,28 @@ h2   {color: black;background: white;}
 		<img src="sheep-wolf-model.jpg" alt="snapshot of ageny based model" width="340" height="426" align="left"/>
 		This is a <b>Python</b> model running in a GUI.<br>
 		It contains agents(sheep) grazing an environment and second agents(wolves) chasing
-		and eating the sheep. The environment is read in from a 2 dimensional raster file 
-		and the sheeps(y,x) coordinmates are scraped from a web page (previous versions
-		of the model in the sumission folder show how these can be generated randomly instead). The sheep move, eat and interact with each
-		other sometimes sharing the food they eat. The model can be 
-		run for a chosen number of iterations and sheep. The number 
+		and eating the sheep. The environment is read in from a 2 dimensional 300x300 raster file 
+		and the sheeps(y,x) coordinates are scraped from a web page in the range 0-100(previous versions
+		of the model in the submission folder show how these can be generated randomly instead). The sheep move, eat and interact with each
+		sharing their food if they are less than "neighbourhood"(argument) units apart. The wolves traverse the slope and will eat up to 3 sheep 
+		every 24 iterations if the sheep are close enough (<10 units). The model can be 
+		run for a chosen number of iterations and sheep and "neighbourhood" distance. The number 
 		of wolves is randomly generated from a range dependent on the number of sheep<br><br>
+		3 arguments need to be defined when running the model - number of iterations, number of sheep and the distance within which the 
+		sheep share food eg <strong>eg  python sheep_wolf_model.py 10 10 10 </strong>
 		<b>Running the model (sheep_wolf_model.py)</b> opens 2 windows ("Figure 1" and "Sheep"). <strong>Both windows must be left open.</strong> In the "Sheep" window select "Run model" 
 		from the "Model" dropdown menu to run
 		the model. Select "END" from the "Model" dropdown menu when you are finished. A message will pop up saying how many sheep have been eaten
-		 and the print output will tell you how many wolves there were.
+		 and the print output will tell you how many wolves there were .
 		An output file called model_data.txt is appended to for each run and will list the time it ran,
-		number of agents, number of iterations, number of wolves, and number of sheep eaten.
+		number of agents, number of iterations, number of wolves, number of sheep eaten and the amount eaten by the remaining sheep.
 		<br>
 		<i>Note:</i> <br>
 		If running the model from Spyder ensure Tkinter is selected from the "Graphics backend" dropdown list
 		in the graphics tab in Tools>Preferences>IPython console>
 		<b>For detailed information read the README.txt file in the submission folder</b?
 		<br><br><br>
-		<b><small><i>Left: snapshot of gui</i><small><b>
+		<b><small><i>Above: snapshot of gui</i><small><b>
 		<br>
 		
 	</figure>
