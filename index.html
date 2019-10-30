@@ -1,41 +1,40 @@
 <!DOCTYPE html>
-<HTML>
-<html lang="en-GB">
-<head>
 
+
+<html lang="en-GB">
+
+<head>
+<meta charset="UTF-8">
+  
+  <meta name="author" content="Liz Osbourn">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <TITLE>
 Liz Osbourn
 </TITLE>
-<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" >
+
+
+
+
 <style>
-body {background-color: powderblue; margin: 0;font-family: Arial, Helvetica, sans-serif;}
-h1   {color: blue;}
-p    {color: red;}
 
+p    {color: black;background: white;}
+h1   {color: black; background: white;}
+h2   {color: black;background: white;}
 
-.topnav {
+.navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(220,20,60);
 }
 
-.topnav a {
+.navbar a {
   float: left;
-  color: #f2f2f2;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
 .dropdown {
   float: left;
   overflow: hidden;
@@ -45,7 +44,7 @@ p    {color: red;}
   font-size: 16px;  
   border: none;
   outline: none;
-  color: white;
+  color: black;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -53,8 +52,10 @@ p    {color: red;}
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: gray;
 }
+
+
 
 .dropdown-content {
   display: none;
@@ -81,136 +82,77 @@ p    {color: red;}
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 </style>
 </head>
-<!--This is a comment. Comments are not displayed in the browser-->
-<BODY style="background-color:powderblue;text-align:center;">
-<h1 style="font-size:60px;color:blue;">Liz Osbourn</h1>
+<body>
 
-<h2>GEOG5995</h2>
-
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="liz.html">About me</a>
+  <a href="Contact.html">Contact</a>
   
-	<div class="dropdown">
-    <button class="dropbtn">Courses
+  
+	<div class = "dropdown">
+    <button class="dropbtn">Projects 
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content">
-      <a href="#">GEOG5995</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-  <a href="#courses">Courses</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-</div> 
+		<div class="dropdown-content">
+		<a href="geog5995.html">GEOG5995</a>
+		
+		<a href="phd.html">PhD research</a>
+		</div> 
+	</div>
+</div>
 
-
-<p style="color:red";border:2px solid red; title="practicals">This is a paragraph.
-</p>
-
-<!--   COMMENT  
-The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.
-The <hr> element is used to separate content (or define a change) in an HTML page:
-Use <br> if you want a line break (a new line) without starting a new paragraph: 
-The HTML <pre> element defines preformatted text.
-The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both 
-spaces and line breaks:
-"font-family:verdana;"
-font-family:courier;" style="font-size:300%;style="text-align:center;" 
-<b>This text is bold</b></p>
-<p><i>This text is italic</i></p>
-<p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
-<b> - Bold text
-<strong> - Important text
-<i> - Italic text
-<em> - Emphasized text
-<mark> - Marked text
-<small> - Small text
-<del> - Deleted text
-<ins> - Inserted text
-<sub> - Subscript text
-<sup> - Superscript text
-<blockquote cite="http:
-The HTML <q> element defines a short quotation.
-Browsers usually insert quotation marks around the <q> element
-The <abbr title="World Health Organization">WHO</abbr>
-The HTML <cite> element defines the title of a work.
-to include external style shhet <link rel="stylesheet" href="styles.css">
-<img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
-A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.-->
-
-<a href="https://www.github.com">Link to practical</a> 
-
-<img src="1265740137.jpg" alt="snapshot of ageny based model" width="104" height="142"> 
-
-Hello world
-<!--   COMMENT  -->
-<button>Practical 1</button> 
-
-<label>What Fruit Do You Like Most?</label><br>
-<form>
-<select id="selFruit">
-<option value="Grapes">Grapes</option>
-<option value="Tomatoes">Tomatoes</option>
-<option value="Dates">Dates</option>
-<option value="Honeydew">Honeydew</option>
-<option value="Cantaloupe">Cantaloupe</option>
-</select>
-</form>
-
-
-<ul>
-  <li>Practical 1: Agent based modelling</li>
-  <li>Practical 2: Code shrinking I</li>
-  <li>Practical 3: Code shrinking II</li>
-  <li>Practical 4: Building Tools</li>
-  <li>Practical 5: Agents!</li>
-  <li>Practical 6: I/O</li>
-  <li>Practical 7: Communicating</li>
-  <li>Practical 8: Animation/behaviour</li>
-</ul>
-
-<ol>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ol> 
-<footer id="myFooter">
+<div style="padding-left:16px">
   
- 
+  <h1>Liz Osbourn</h1>
+  <p></p>
+  <h2>What's new: </h2>
+  <span style="text-decoration: underline;">
+  <h3>Agent based modelling</h3></span>
+  <font size="6" colour = "red">
+  <a href="https://github.com/cdatproject/Practicals---final/tree/master/Submission">Please click here for the GEOG5995 code submission:</a><br><br><br>
+  </font>
+  <a href="GEOG5995.html">Please click here for further details and the development stages of GEOG5995 code:</a>
   
- <!--   COMMENT  
-  authorship information
-copyright information
-contact information
-sitemap
-back to top links
-related documents   -->
+</div>
 
-<h2 Advancing landscape visibility-mapping through data analytics; title="PhD project">  </h2>
+<div style="padding-left:16px">
+	The sheep grazing and wolf eating agent based model: <br><br>
+	<figure>
+		<img src="sheep-wolf-model.jpg" alt="snapshot of ageny based model" width="340" height="426" align="left"/>
+		This is a <b>Python</b> model running in a GUI.<br>
+		It contains agents(sheep) grazing an environment and second agents(wolves) chasing
+		and eating the sheep. The environment is read in from a 2 dimensional raster file 
+		and the sheeps(y,x) coordinmates are scraped from a web page (previous versions
+		of the model in the sumission folder show how these can be generated randomly instead). The sheep move, eat and interact with each
+		other sometimes sharing the food they eat. The model can be 
+		run for a chosen number of iterations and sheep. The number 
+		of wolves is randomly generated from a range dependent on the number of sheep<br><br>
+		<b>Running the model (sheep_wolf_model.py)</b> opens 2 windows ("Figure 1" and "Sheep"). <strong>Both windows must be left open.</strong> In the "Sheep" window select "Run model" 
+		from the "Model" dropdown menu to run
+		the model. Select "END" from the "Model" dropdown menu when you are finished. A message will pop up saying how many sheep have been eaten
+		 and the print output will tell you how many wolves there were.
+		An output file called model_data.txt is appended to for each run and will list the time it ran,
+		number of agents, number of iterations, number of wolves, and number of sheep eaten.
+		<br>
+		<i>Note:</i> <br>
+		If running the model from Spyder ensure Tkinter is selected from the "Graphics backend" dropdown list
+		in the graphics tab in Tools>Preferences>IPython console>
+		<b>For detailed information read the README.txt file in the submission folder</b?
+		<br><br><br>
+		<b><small><i>Left: snapshot of gui</i><small><b>
+		<br>
+		
+	</figure>
+		 
+	
+	
+</div>
+</body>
+</html>
 
-<p>What you can see from your house or hospital bed or office can have huge implications for your 
-quality of life. The visibility of green space and natural landscapes has been shown to enhance 
-health and boost house prices. But line of sight may also provide important information for the spread 
-of air pollutants, noise and other important factors that affect human wellbeing, planning decisions, 
-and economic outcomes. This PhD is working with Ordnance Survey, one 
-of the leading providers of geographic data, to push back the boundaries of mapping technology through 
-the application of data analytics, line-of-site modelling and information synthesis.</p>
-
-
-
-
-
-
-
-<address>
-Written by <a href="mailto:EJOSBOURN1@SHEFFIELD.AC.UK.com">Liz Osbourn</a>.<br> 
-Visit us at:<br>
-<a href="https://datacdt.org/" target="_blank">datacdt</a><br>
-
-
-</address>
-</footer>
-</BODY>
-</HTML> 
+<!--In creating the webpage I used lessons from https://www.w3schools.com and ideas from www.quackit.com 
+to help with thr dropdown menus.-->
