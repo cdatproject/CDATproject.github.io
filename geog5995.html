@@ -1,192 +1,123 @@
 <!DOCTYPE html>
 
 <html lang="en-GB">
-<head>
-
-<TITLE>
-
-GEOG5995
-</TITLE>
-<meta charset="UTF-8">
-<meta name="author" content="Liz Osbourn">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Liz Osbourn">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>GEOG5995</title>
 
 
-body {
-  background-color: powderblue; margin: 0; font-family: Arial, Helvetica, sans-serif;
-}
-h1   {color: blue;}
-p    {color: red;}
+		<style > <!--to have css style rules embedded within the page, rather than use stylesheet-->
+		
+		
 
+
+		body {
+		  background-color: white; margin: 0; font-family: Arial, Helvetica, sans-serif;
+		}
+				
+					body{
+						margin:0;
+						padding:0;
+						font-family: Sans-Serif;
+						line-height: 1.5em;
+					}
+					
+					#header {
+						background: rgb(220,20,60);
+						height: 100px;
+					}
+					
+					#header h1 {
+						margin: 0;
+						padding-top: 15px;
+					}
+					
+					header h4 {
+						display: inline;
+						margin-right: 1em;
+					}
+				
+					#contentwrapper{
+						float: left;
+						width: 100%;
+					}
+					
+					#content {
+						margin-right: 460px;
+						padding-bottom: 10010px;
+						margin-bottom: -10000px;
+						}
+					
+					
+					
+					.innertube{margin: 15px; margin-top: 0;}
+				
+				
+					p {
+						color: #555;
+					}
+			
+					
+			
+		</style>
+		
+		
+	</head>
 	
-<!--/* Style the footer -->
-.footer {
-  background-color: #f1f1f1; padding: 10px}<!--
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
+	<body>
 
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}-->
-</style>
-</head>
-
-
-<!--This is a comment. Comments are not displayed in the browser-->
-<!--<BODY style="background-color:powderblue;text-align:center;">
-<h1 style="font-size:60px;color:blue;">Liz Osboooourn</h1>
--->
-<body>
-
-<div class="topnav">
-  <a class="active" href="index.html">Home</a>
+			<header id="header">
+				<div class="innertube">
+					<h1>GEOG5995</h1>
+					<small style="text-align:right;"><a href="index.html">Homepage</a></small>
+					
+					
+				</div>
+			</header>
   
-</div>
-
-<div style="padding-left:16px">
-  <h2>
-	Agent Based Model Practicals</h2>
-</div>
-	<!--<div class="dropdown">
-    <button class="dropbtn">Courses
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      
-  <a href="#courses">Courses</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-</div> 
-
-
-<p style="color:red";border:2px solid red; title="practicals">This is a paragraph.
-</p>
-
-COMMENT  
-The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.
-The <hr> element is used to separate content (or define a change) in an HTML page:
-Use <br> if you want a line break (a new line) without starting a new paragraph: 
-The HTML <pre> element defines preformatted text.
-The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both 
-spaces and line breaks:
-"font-family:verdana;"
-font-family:courier;" style="font-size:300%;style="text-align:center;" 
-<b>This text is bold</b></p>
-<p><i>This text is italic</i></p>
-<p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
-<b> - Bold text
-<strong> - Important text
-<i> - Italic text
-<em> - Emphasized text
-<mark> - Marked text
-<small> - Small text
-<del> - Deleted text
-<ins> - Inserted text
-<sub> - Subscript text
-<sup> - Superscript text
-<blockquote cite="http:
-The HTML <q> element defines a short quotation.
-Browsers usually insert quotation marks around the <q> element
-The <abbr title="World Health Organization">WHO</abbr>
-The HTML <cite> element defines the title of a work.
-to include external style shhet <link rel="stylesheet" href="styles.css">
-<img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
-A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.-->
-
-<a href="https://github.com/cdatproject/Practicals---final/tree/master/Submission">Link to sheep_wolf_model code repository</a> 
-
-<img src="sheep-wolf-model.jpg" alt="snapshot of ageny based model" width="104" height="142"> 
-
-<p style="color:red;" border: 2px solid red; title="practicals"; align = "right">
-This is a paragraph. where i put all info about the model
-</p>
-
-
-<ul>
-  <li>sheep_wolf_model.py README</li><form method="get" action="https://github.com/cdatproject/Practicals---final/blob/master/Submission/README.md"><button type="submit">README</button></form>
-  <li>License</li><form method="get" action="https://github.com/cdatproject/Practicals---final/blob/master/Submission/license.txt"><button type="submit">LICENSE</button></form>
-  <li>Practical 1: Agent based modelling</li><form method="get" action="https://github.com/cdatproject/Practicals---final/blob/master/Submission/practical1_model.py"><button type="submit">Practical 1</button></form> 
-  <li>Practical 2: Code shrinking I</li><form method="get" action="https://github.com/cdatproject/Practicals---final/blob/master/Submission/practical2_model.py"><button type="submit">Practical 2</button></form> 
-  <li>Practical 3: Code shrinking II</li><form method="get" action="https://github.com/cdatproject/Practicals---final/blob/master/Submission/practical3_model.py"><button type="submit">Practical 3</button></form>
-  <li>Practical 4: Building Tools</li><form method="get" action="https://github.com/cdatproject/Practicals---final/blob/master/Submission/practical4_model_x.py"><button type="submit">Practical 4</button></form> 
-  <li>Practical 5: Agents!</li><form method="get" action="https://github.com/cdatproject/Practicals---final/blob/master/Submission/practical5_model_xy.py"><button type="submit">Practical 5</button></form> 
-  <li>Practical 6: I/O</li><form method="get" action="https://github.com/cdatproject/Practicals---final/blob/master/Submission/practical6_model_xy.py"><button type="submit">Practical 6</button></form>
-  <li>Practical 7: Communicating</li><form method="get" action="https://github.com/cdatproject/Practicals---final/blob/master/Submission/practical7_model.py"><button type="submit">Practical 7</button></form> 
-  <li>Practical 8: Animation/behaviour</li><form method="get" action="https://github.com/cdatproject/Practicals---final/blob/master/Submission/practical8_model.py"><button type="submit">Practical 8</button></form> 
-  <li>Documentation</li><form method="get" action="https://github.com/cdatproject/Practicals---final/blob/master/Submission/Practical1_model.py"><button type="submit">Documents</button></form> 
-</ul>
-
-
-
-<footer id="myFooter">
   
-</body> 
-  
- <!--   COMMENT  
-  authorship information
-copyright information
-contact information
-sitemap
-back to top links
-related documents   -->
+		
+		<div id="mainwrapper">
+		
+			<div id="contentwrapper">
+				<div id="content">
+					<div class="innertube">
+						<p>This module consisted of a series of practicals (1-8) leading to the develoment of a Python
+						agent based model. This model was based on an agents moving and interacting in an environment.
+						In each of the stages extra features have been added. Some of these features have not been included
+						in the final model. To see the code for these features please look at the appropiate practical code
+						I have listed below what was covered in each practical.
+						<ul>
+						<li><b>practical1_model.py - </b>	Makes 2 agents Moves 2 agents num_of_iterations iterations calculates distance betwen 2 agents</li>
+						<li><b>practical2_model.py - </b>	Creates agent list, with coordinates generated randomly for num_of_agents agents Uses indexed list referencing Plots 2 agent final positions using Matplotlib ****EXTRA - plots most easterly point red</li>
+						<li><b>practical3_model.py - </b>	Shrinks code to move num_of_agents agents Implements torus solution to deal with boundary effects Plots num_of_agents agents</li>
+						<li><b>practical4_model.py - </b>	Records times for model to run for different numbers of agents using perf_counter and magnitudes_of_agents Defines distance_between function, eliminating duplicate testing between agents ****EXTRA plots num_of_agents against time taken for model to run ****EXTRA prints minimum and maximum distance between agents</li>
+						<li><b>Practical5_model_xy.py -</b> Creates agents using Agent class in agentframework.py num_of_agents created and added to agents container agents move num_of_iterations iterations</li>
+						<li><b>Practical5_Agentframework_xy -</b>	each agent has (y,x) between [0,100] randomly generated move behviour added to Agent class - (y,x) move +/-1 randomly protects variable using _x and _y sets up property() attribute for x and y</li>
+						<li><b>Practical6_model_xy.py uses csv -</b>	reader to import in.txt raster file into environment ****EXTRA sets x and y possible dimensions same as environment pass environment into each agent when it is created eat() called for each agent after move() ****EXTRA environment written out to environment_eaten.txt at the end agents_stores.txt created with total amount stored by all the agents on a line, appended for each time model runs ****EXTRA appends total of all agents stores to all_agents_stores_total.txt</li>
+						<li><b>Practical6_Agentframework_xy -</b>	pass environment variable into Agent constructor ****EXTRA passes x_dimension and y_dimenson into constructor function Create store for each agent with starting value = 0 define eat() for sheep to eat 10 if environment >=10 at its location str(self) overriden to display coordinates and store else added to eat() so agents eat last bits without leaving negative values ****EXTRA if added to eat() for agent(sheep) to be sick if store >100</li>
+						<li><b>practical7_model.py -</b>	all agents contain list of all other agents Added neighbourhood variable - defines distance within share_with_neighbour is called Shuffles agent order before each iteration to prevent model artifacts adds in sysargv arguments to run from command line setting num_of_iterations, num_of_agents and neighbourhood from command line call note practical7_model.html generated with sysargv commented out due to issue with pydoc running</li>
+						<li><b>practical7_Agentframework.py -	</b>Create distance_between() method to define distance between 2 agents Create share_with_neighbour method - if distance between 2 agents &lt; neighbourhood then both stores set to the average of both stores</li>
+						<li><b>practical8_model.py -	</b>Plots the agents after each iteration using update() function within FuncAnimation defines generator function gen_function() to use as frames argument gen_function() uses 2 stopping conditions - carry_on and num_of_iterations carry_on set to false when all sheep have eaten at least 300 Removed code writing agent stores to agents_stores.txt, environment_eaten.txt and all_agents_stores_total.txt</li>
+						<li>practical8_Agentframework.py 	no updates</li>
+						</ul>
+						
+						
+						
+						
+		</div>
+	<img src="IMG_1481.jpg" alt="picture of sheep" width="386" height="515"/>
 
+	<address>
+		<p>Visit us at:<br></p>
+		<p><a href="https://datacdt.org/" target="_blank">datacdt</a><br>
+			<a href="https://www.ordnancesurvey.co.uk/" target="_blank">Ordnance Survey</a><br></p>
+	</address>
+	</div></div></div>
+	</body>
 
-
-
-
-
-
-
-
-<address>
-Written by <a href="mailto:EJOSBOURN1@SHEFFIELD.AC.UK.com">Liz Osbourn</a>.<br> 
-Visit us at:<br>
-<a href="https://datacdt.org/" target="_blank">datacdt</a><br>
-
-
-</address>
-</footer>
-</BODY>
-</HTML> 
+</html>
 <!--In creating the webpage I used lessons from https://www.w3schools.com and ideas from www.quackit.com 
 to help with thr dropdown menus.-->
