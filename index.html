@@ -115,8 +115,9 @@ h2   {color: black;background: white;}
   <p style="font-size:2em; color:red;">
   <a href="https://github.com/cdatproject/GEOG5995-assignment1">Please click here for the GEOG5995 code submission</a>
   </p>
+  <p style="font-size:0.9em; color:red;">
   <a href="https://cdatproject.github.io/geog5995.html">Please click here for further details and the development stages of GEOG5995 code:</a>
-  
+  </p>
 </div>
 
 <div style="padding-left:16px">
@@ -137,15 +138,16 @@ h2   {color: black;background: white;}
 		iterations has been reached. This full amount has been set to 300 to allow the model to run for the chosen number of iterations.
 		<br><br>
 		3 positive integer arguments need to be defined when running the model - number of iterations, number of sheep and the distance within which the 
-		sheep share food eg <strong>eg  python sheep_wolf_model.py 10 10 10 </strong>
+		sheep share food eg <strong>eg  python sheep_wolf_model.py 10 10 10 </strong><br><br>
 		<b>Running the model (sheep_wolf_model.py)</b> opens 2 windows ("Figure 1" and "Sheep"). <strong>Both windows must be left open.</strong> In the "Sheep" window select "Run model" 
 		from the "Model" dropdown menu to run
 		the animation. Sheep are represented by dots and wolves by crosses. Select "END" from the "Model" dropdown menu when you are finished. A message will pop up saying how many sheep have been eaten
-		 and the print output will tell you how many wolves there were. Manually close the Tkinter window if it is still open.
+		 and the print output will tell you how many wolves there were. Manually close the Tkinter window if it is still open. The model only runs once per GUI.
 		Once this closing has completed,an output file called model_data.txt is appended to for each run and will list the time it ran,
-		number of agents, number of iterations, number of wolves, number of sheep eaten and the amount eaten by the remaining sheep.
-		Also a file containing the data for that run of the model is appended to (model_data.txt) and the remaining environment
-		is written to enviroenment_eaten.txt
+		number of agents, number of iterations, number of wolves, number of sheep eaten , number of full remaining sheep and whether the sheep_full stopping condition stopped the model running for the full
+		number of iterations.
+		Also a file containing the individual agents stores for that run of the model is appended to (agents_stores.txt) and the remaining environment
+		is written to environment_eaten.txt
 		<br>
 		<i>Note:</i> <br>
 		If running the model from Spyder ensure Tkinter is selected from the "Graphics backend" dropdown list
